@@ -8,13 +8,12 @@ int main(){
         printf("Welcome to this program! ^`~`^ <3\n");
     }
     else{
-        printf("Again welcome to this program! ^`~`^ <3\n");
+        printf("\nAgain welcome to this program! ^`~`^ <3\n");
     }
-    ret:
     printf("\n");
     printf("Enter the respective number and press enter\n");
-    printf("1.Validate a credit card number\n");
-    printf("2.Find a single missing number on the card\n");
+    printf("1. Validate a credit card number\n");
+    printf("2. Find the missing digit in the credit card number\n");
     int click=0;
     scanf("%d",&click);
     getchar(); 
@@ -27,16 +26,16 @@ int main(){
         goto um;
     }
     if(love>0){
-        printf("After so much struggle you have finally Enterd a valid number ^/~/^\n");
+        printf("After so much struggle you have finally entered a valid number ^/~/^\n");
         
     }
     shift:
     if(click ==2){
-        printf("***********notice***********\n");
-        printf("For the respective number, leave the place for missing number with a sapce\n");
+        printf("__________NOTICE__________\n");
+        printf("leave a space in place of the missing digit out of 16 digits\n");
         
     }
-    printf("\nEnter you credit card numer\n");
+    printf("\nEnter you credit card number\n");
     if(click ==1){
         printf("--Example__1234123412341234\n");
     }
@@ -130,11 +129,11 @@ int main(){
         }
         input[god] = (char)(i+'0'); 
         printf("The missing number is %d\n",i);
-        printf("And you credit card number is %s\n\n",input);
+        printf("And your credit card number is %s\n\n",input);
     }
     unique:
-    printf("1.Leave this program `~`\n");
-    printf("2.Go back to the start menu :-)\n");
+    printf("1. EXIT the program `~`\n");
+    printf("2. Go back to the start menu :-)\n");
     int umm;
     scanf("%d",&umm);
     getchar();
@@ -144,11 +143,15 @@ int main(){
     }
     else{
         if(umm == 2){
-            goto ret;
+            prince = 1;
+            free(input);
+            goto um;
         }
         else{
             printf("BYE ^/~/^\n");
         }
     }
+    free(input);
     return 0;
+    
 }
