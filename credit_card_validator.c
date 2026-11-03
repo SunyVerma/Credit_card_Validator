@@ -25,6 +25,7 @@ int main(){
     }
     if(prince != 1){
         printf("After so much struggle you have finally Enterd a valid number ^/~/^\n\n");
+        prince = 0;
     }
     shift:
     if(click ==2){
