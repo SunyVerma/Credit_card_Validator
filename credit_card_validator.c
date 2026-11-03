@@ -5,10 +5,10 @@ int main(){
     int love = 0;
     um:
     if(prince == 0){
-        printf("Welcome to this program! ^`~`^ <3\n\n");
+        printf("Welcome to this program! ^`~`^ <3\n");
     }
     else{
-        printf("Again welcome to this program! ^`~`^ <3\n\n");
+        printf("Again welcome to this program! ^`~`^ <3\n");
     }
     ret:
     printf("\n");
@@ -20,14 +20,14 @@ int main(){
     getchar(); 
     
     if(!(click == 1 || click == 2)){
-        printf("Choose a valid number! :-(\n\n");
+        printf("\nChoose a valid number! :-(\n\n");
         love++;
         printf("Press Enter!");
         getchar();
         goto um;
     }
     if(love>0){
-        printf("After so much struggle you have finally Enterd a valid number ^/~/^\n\n");
+        printf("After so much struggle you have finally Enterd a valid number ^/~/^\n");
         
     }
     shift:
@@ -99,10 +99,10 @@ int main(){
     }
     if(click == 1){
         if(sum%10 == 0){
-        printf("%s is a valid Credit Card number :-)\n\n",input);
+        printf("%s is a valid Credit Card number :-)\n",input);
     }
     else{
-        printf("%s is a not valid Credit Card number :-(\n\n",input);
+        printf("%s is a not valid Credit Card number :-(\n",input);
     }
     }
     else{
