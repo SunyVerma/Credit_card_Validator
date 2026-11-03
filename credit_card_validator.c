@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int main(){
     int prince = 0;
-    ret:
+    int love = 0;
     um:
     if(prince == 0){
         printf("Welcome to this program! ^`~`^ <3\n\n");
@@ -10,22 +10,25 @@ int main(){
     else{
         printf("Again welcome to this program! ^`~`^ <3\n\n");
     }
+    ret:
+    printf("\n");
     printf("Enter the respective number and press enter\n");
     printf("1.Validate a credit card number\n");
     printf("2.Find a single missing number on the card\n");
     int click=0;
     scanf("%d",&click);
     getchar(); 
-    prince++;
+    
     if(!(click == 1 || click == 2)){
         printf("Choose a valid number! :-(\n\n");
+        love++;
         printf("Press Enter!");
         getchar();
         goto um;
     }
-    if(prince != 1){
+    if(love>0){
         printf("After so much struggle you have finally Enterd a valid number ^/~/^\n\n");
-        prince = 0;
+        
     }
     shift:
     if(click ==2){
